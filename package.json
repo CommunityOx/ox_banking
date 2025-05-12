@@ -8,8 +8,8 @@
   "scripts": {
     "web:dev": "cd src/web && vite dev",
     "web:watch": "cd src/web && vite build --watch",
-    "build": "node scripts/build.js --mode=production",
-    "watch": "node scripts/build.js --watch",
+    "build": "bun run scripts/build.js --mode=production",
+    "watch": "bun run scripts/build.js --watch",
     "prettier": "prettier ./src/**/*.ts --write"
   },
   "keywords": [
