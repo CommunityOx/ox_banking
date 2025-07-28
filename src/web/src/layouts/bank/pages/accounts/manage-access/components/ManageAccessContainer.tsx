@@ -34,17 +34,17 @@ const ManageAccessContainer: React.FC<{ accountId: number }> = ({ accountId }) =
             users: [
               {
                 name: 'Place Holder',
-                stateId: 'LF23312',
+                stateId: 'LFCZ2',
                 role: 'manager',
               },
               {
                 name: 'Place Holder',
-                stateId: 'LF23312',
+                stateId: 'LFCZ1',
                 role: 'owner',
               },
               {
                 name: 'Place Holder',
-                stateId: 'LF23312',
+                stateId: 'LFCZ4',
                 role: 'contributor',
               },
             ],
@@ -64,7 +64,7 @@ const ManageAccessContainer: React.FC<{ accountId: number }> = ({ accountId }) =
   const spinnerVisible = isLoading || isSearchDebouncing;
 
   return (
-    <div className="flex h-full flex-col justify-between rounded-lg">
+    <div className="flex flex-col justify-between h-full rounded-lg">
       {!spinnerVisible ? (
         <div className="grid grid-cols-2 gap-2">
           {data?.users.map((user) => (
