@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Pagination: React.FC<Props> = ({ maxPages, page, setPage }) => {
-  if (maxPages === 0) {
+  if (!maxPages) {
     return null;
   }
 
